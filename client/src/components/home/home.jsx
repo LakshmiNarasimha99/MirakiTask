@@ -143,7 +143,7 @@ function Home() {
                             }
                           }}
                         >
-                          mark as completed
+                          Mark as Completed
                         </button>
                       )}
                       {task.status === "complete" && (
