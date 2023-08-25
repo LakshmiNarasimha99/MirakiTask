@@ -58,7 +58,7 @@ function Home() {
               <label htmlFor="description" className="form-label">
                 Description
               </label>
-              <div class="form-floating">
+              <div className="form-floating">
                 <textarea
                   {...addForm.register("description", {
                     required: "description is required",
@@ -192,26 +192,26 @@ function Home() {
       </div>
       <Toaster />
       <div
-        class="modal fade"
+        className="modal fade"
         id="editModal"
         tabIndex={-1}
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">
+        <div className="modal-dialog modal-lg">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title fs-5" id="exampleModalLabel">
                 Edit Task
               </h1>
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
               <form>
                 <div className="row">
                   <div className="col-lg-6 col-md-6 col-sm-12 col-12">
@@ -238,7 +238,7 @@ function Home() {
                     <label htmlFor="description" className="form-label">
                       Description
                     </label>
-                    <div class="form-floating">
+                    <div className="form-floating">
                       <textarea
                         {...editForm.register("description", {
                           required: "description is required",
