@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { envi } from "../../environment";
+import { Link } from "react-router-dom";
 function Home() {
   const [tasks, setTasks] = useState([]);
   const [editData, setEditData] = useState({});
@@ -30,6 +31,14 @@ function Home() {
   }, []);
   return (
     <div>
+      <div className="text-end me-5" >
+      <button className="btn btn-danger mt-3 mr-2 text-end" type="submit">
+        <Link className="text-black" to={"/"}>
+          {" "}
+          Logout
+        </Link>
+      </button>
+      </div>
       <div className="card mt-3">
         <div className="card-body">
           <div className="h5">Create Task</div>

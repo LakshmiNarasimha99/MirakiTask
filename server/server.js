@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import taskRouter from "./router/taskRouter.js";
+import userRouter from "./router/userRouter.js";
 // import dotenv from "dotenv";
 // dotenv.config();
 
@@ -27,3 +28,4 @@ app.get("/taskmanager/api", (req, res) => {
   res.status(200).send("Welcome to taskmanager api!");
 });
 app.use("/taskmanager/api/tasks", taskRouter);
+app.use("/taskmanager/api/users",userRouter);
